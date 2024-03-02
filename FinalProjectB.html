@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IceCoffeeProject</title>
+    <style>
+      body {
+         font-family: Arial, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, #ffffffdd, #f2f2f2d3);
+        color: #020202;
+        background-color: #b0f2ec;
+  
+      }
+      header {
+        text-align: center;
+        padding: 10px;
+        background: #fff;
+        color:#009688;
+        border-radius: 50px;
+        border: 4px solid #009688;
+      }
+
+      h1,
+      h2 {
+        margin: 0;
+      }
+      hr{
+  border-top: 3px solid #009688;
+}
+
+      p {
+     
+        text-align: center;
+         direction: initial;
+      }
+      img {
+        display: block;
+        width: 300px;
+        height: auto;
+        margin: auto;
+        border: 5px solid #009688;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+      .center-text {
+        text-align: center;
+        display: block;
+      }
+      button {
+        background: #009688;
+        color: #fff;
+        padding: 10px 15px;
+        font-size: 16px;
+        display: block;
+        margin: auto;
+        border: none;
+        border-radius: 5px;
+        cursor:pointer;
+        transition: background 0.3s ease;
+      }
+
+      button:hover {
+        background: #00796b;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: #009688;
+        color: #fff;
+      }
+
+      .social {
+        font-weight: bold;
+        color: #000879;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>A cup of iced Coffee on a sunny day…that’s heaven!</h1>
+      <h2>
+        <em> I love Iced Coffee🥰<br /></em>
+        <em>Especially the Starbucks Frappuccino</em>
+      </h2>
+      
+    </header>
+     <hr />
+     <p>
+      Frappuccino is a line of blended iced coffee drinks sold by Starbucks.<br />
+      It may consist of coffee or crème base, blended with ice and ingredients
+      such as flavored syrups and usually topped with whipped cream and or
+      spices. <br />
+      It may also include blended Starbucks refreshers.<br />
+      I love their Caramel Frappucino😍
+      <br>
+   
+   
+  
+    </body>
+    <div id="frappuccinoImage">
+      <img
+        src="https://media1.popsugar-assets.com/files/thumbor/E0A6hvt-8_PJzDvDwktS-8ivGjA/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2018/04/30/062/n/1922195/tmp_IYeW20_947aeee9ca02fc1e_Triple_Mocha_Frappuccino.jpg"
+        alt="Starbucks Frappuccino"
+      />
+    </div>
+    <div id="frappuccinoInfo">
+      <p>Indulge in the rich and creamy goodness of Starbucks Frappuccinos.</p>
+      <p>Choose from a variety of flavors to satisfy your taste buds.</p>
+
+      <p>Experience the perfect blend of coffee, ice, and flavorings.</p>
+      <p>
+        <strong
+          >Check out their their menu and tell us your favorite
+          flavour🥤</strong
+        >
+      </p>
+      <div class="center-text">
+        <a
+          href="https://www.starbucks.com/menu/drinks/frappuccino-blended-beverages"
+          target="_blank"
+          >Frappucino Starbucks Menu</a
+        >
+      </div>
+      <br />
+      <br />
+      <button onclick="showPrompt()">Tell us your favorite flavor!</button>
+      <br />
+      <br />
+    </div>
+    <footer>
+      <p>
+        <strong>
+          Follow Starbucks <span class="social">Instagram</span> and
+          <span class="social">Facebook</span> for updates!</strong
+        >
+      </p>
+    </footer>
+    <script>
+      function showPrompt() {
+        let favoriteFlavor = prompt(
+          "What's your favorite Starbucks Frappuccino flavor?"
+        );
+
+        if (favoriteFlavor) {
+          alert(`Great choice! ${favoriteFlavor} is a delicious flavor.`);
+        } else {
+          alert(
+            "No worries! Feel free to explore our Frappuccino menu to find your favorite."
+          );
+        }
+      }
+    </script>
+  </body>
+</html>
